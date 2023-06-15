@@ -1,5 +1,6 @@
 import { style } from '@angular/animations';
 import { AfterViewChecked, Component } from '@angular/core';
+
 @Component({
   selector: 'app-property-home',
   templateUrl: './property-home.component.html',
@@ -146,4 +147,5 @@ export class PropertyHomeComponent {
     return false;
   }
   fliter(id: any) {}
+  // slide Owl
 }
