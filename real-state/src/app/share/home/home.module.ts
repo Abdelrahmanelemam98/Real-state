@@ -17,6 +17,6 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
     AboutUsComponent,
   ],
   imports: [CommonModule, CarouselModule, HammerModule, IgxCarouselModule],
-  exports: [PropertyHomeComponent],
+  exports: [PropertyHomeComponent, AboutUsComponent],
 })
 export class HomeModule {}
