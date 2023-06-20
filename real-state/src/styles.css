@@ -23,3 +23,6 @@ body {
 .owl-theme .owl-dots .owl-dot.active span {
   background: #fb8053 !important ;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
