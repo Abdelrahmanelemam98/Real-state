@@ -1,12 +1,22 @@
 import { NgModule } from '@angular/core';
+
 import { CommonModule } from '@angular/common';
-
-
+import { HammerModule } from '@angular/platform-browser';
+import { IgxCarouselModule } from 'igniteui-angular';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { PropertyHomeComponent } from './components/property-home/property-home.component';
+import { SearchPropertyComponent } from './components/search-property/search-property.component';
+import { WorksSectionComponent } from './components/works-section/works-section.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  declarations: [
+    PropertyHomeComponent,
+    SearchPropertyComponent,
+    WorksSectionComponent,
+    AboutUsComponent,
+  ],
+  imports: [CommonModule, CarouselModule, HammerModule, IgxCarouselModule],
+  exports: [PropertyHomeComponent, AboutUsComponent],
 })
-export class HomeModule { }
+export class HomeModule {}
